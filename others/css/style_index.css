@@ -1,0 +1,61 @@
+/* body整个 */
+body{
+    margin: 0px;
+}
+
+/* 头部内容 */
+header{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    padding: 10px ;
+}
+/* 顶部导航栏 */
+nav{
+    background-color: black;
+    color: white;
+}
+nav ul{
+    display: flex;
+    margin: 0px;
+    border-width: 2px;
+    list-style-type: none;  /*消除列表前的点*/
+}
+nav ul li{
+    padding: 0px 20px;
+}
+#dropdown-famous{
+    display: none;
+}
+/* 搜索框 */
+#search{
+    display: flex;
+}
+/* 账户 */
+#account{
+    display: flex;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    padding: 2px 6px;
+    border-radius: 20px;
+    margin: 0px 20px;
+}
+#account a{
+    color: white;
+}
+
+/* 主内容 */
+/* 横幅广告 */
+#banner{
+
+}
+#banner img{
+    width: 100%;
+}
+
+/* 超链接 */
+a{
+    text-decoration: none;  /*无下划线*/
+    color: inherit;
+}
