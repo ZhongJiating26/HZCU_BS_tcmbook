@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>本草书</title>
     <link rel="stylesheet" href="others/css/style_index.css">
+    <link rel="icon" href="others/images/tcm_logo.svg">
 </head>
 <body>
     <div id="sticky">
      <!-- 页眉 -->
       <header>
+        <div id="auto-nav">
         <!-- 网站logo -->
          <div id="logo">
-            <img src="others/images/test.jpg" alt="logo图片" width="20px" height="20px">
+            <img src="others/images/tcm_logo.svg" alt="logo图片">
          </div>
         <!-- 导航栏 -->
          <nav>
@@ -37,14 +39,15 @@
         <!-- 搜索栏 -->
          <div id="search">
             <form action="index.html" method="get">
-                <input type="search" placeholder="如何养生？">
-                <input type="submit" value="搜索">
+                <input type="search" placeholder="如何养生？" id="search-input1">
+                <input type="submit" value="搜索" id="search-input2" >
             </form>
          </div>
         <!-- 我的账户 -->
          <div id="account">
             <a href="others/login.html">我的账户</a>
          </div>
+        </div>
       </header>
     </div>
     
@@ -54,46 +57,51 @@
         <!-- 横幅广告 -->
          <div id="banner">
             <img src="others/images/test.jpg" alt="横幅广告图片">
+            <div id="turnleft"><img src="others/images/turn-left.svg" alt="向左"></div>
+            <div id="turnright"><img src="others/images/turn-right.svg" alt="向右"></div>
          </div>
         <!-- 新闻中心 -->
-         <section id="news">
+         <div id="news">
             <h2>新闻中心</h2>
-            <!-- 权威发布 -->
-            <div class="news-part">
-                <h3>权威发布</h3><div class="more"><a href="#.">更多>></a></div>
-
-                <div class="news-top">
-                    <div class="top-title">
-                        <a href="#.">关于加快推进中医优势专科建设的意见</a>
+            <div class="contant">
+                <!-- 权威发布 -->
+                 <div class="news-part" id="news-part1">
+                     <div class="smalltitle">
+                        <h3>权威发布</h3><div class="more"><a href="#.">更多>></a></div>
+                     </div>   
+        
+                    <div class="news-top">
+                        <div class="top-title">
+                            <a href="#.">关于加快推进中医优势专科建设的意见</a>
+                        </div>
+                        <div class="top-content">
+                            加强中医优势专科建设是坚持中医原创思维、巩固扩大特色优势的重要途径，是推动中医医院坚持中医为主办院方向、引领中医医院高质量发展的重要抓手，对促进中医药传承创新发展、服务健康中国建设具有重要意义。
+                        </div>
                     </div>
-                    <div class="top-content">
-                        加强中医优势专科建设是坚持中医原创思维、巩固扩大特色优势的重要途径，是推动中医医院坚持中医为主办院方向、引领中医医院高质量发展的重要抓手，对促进中医药传承创新发展、服务健康中国建设具有重要意义。
-                    </div>
-                </div>
 
-                <div class="news-others">
-                    <div class="others-title"><a href="#.">国家药监局 国家中医药局关于支持珍稀濒危中药材替代品研制有关事项的公告</a></div>
-                    <div class="others-time">2024-10-23</div>
-                </div>
-                <div class="news-others">
-                    <div class="others-title"><a href="#.">关于印发综合医院中医药工作指南（2024版）的通知</a></div>
-                    <div class="others-time">2024-09-19</div>
-                </div>
-                <div class="news-others">
-                    <div class="others-title"><a href="#.">关于加快推进县级中医医院高质量发展的意见</a></div>
-                    <div class="others-time">2024-09-18</div>
-                </div>
-                <div class="news-others">
-                    <div class="others-title"><a href="#.">2023年我国卫生健康事业发展统计公报</a></div>
-                    <div class="others-time">2024-09-03</div>
-                </div>
-                <div class="news-others">
-                    <div class="others-title"><a href="#.">关于促进数字中医药发展的若干意见</a></div>
-                    <div class="others-time">2024-08-19</div>
-                </div>
-            </div>
-            <!-- 时事新闻 -->
-            <div class="news-part">
+                    <div class="news-others">
+                        <div class="others-title"><a href="#.">国家药监局 国家中医药局关于支持珍稀濒危中药材替代品研制有关事项的公告</a></div>
+                        <div class="others-time">2024-10-23</div>
+                    </div>
+                    <div class="news-others">
+                        <div class="others-title"><a href="#.">关于印发综合医院中医药工作指南（2024版）的通知</a></div>
+                        <div class="others-time">2024-09-19</div>
+                    </div>
+                    <div class="news-others">
+                        <div class="others-title"><a href="#.">关于加快推进县级中医医院高质量发展的意见</a></div>
+                        <div class="others-time">2024-09-18</div>
+                    </div>
+                    <div class="news-others">
+                        <div class="others-title"><a href="#.">2023年我国卫生健康事业发展统计公报</a></div>
+                        <div class="others-time">2024-09-03</div>
+                    </div>
+                    <div class="news-others">
+                        <div class="others-title"><a href="#.">关于促进数字中医药发展的若干意见</a></div>
+                        <div class="others-time">2024-08-19</div>
+                    </div>
+                 </div>
+                <!-- 时事新闻 -->
+                 <div class="news-part">
                 <h3>时事新闻</h3><div class="more"><a href="#.">更多>></a></div>
 
                 <div class="news-top">
@@ -125,9 +133,9 @@
                     <div class="others-title"><a href="#.">湖北省中医药管理干部高级研修班举办</a></div>
                     <div class="others-time">2024-12-12</div>
                 </div>
-            </div>
-            <!-- 政策解读 -->
-            <div class="news-part">
+                 </div>
+                <!-- 政策解读 -->
+                 <div class="news-part">
                 <h3>政策解读</h3><div class="more"><a href="#.">更多>></a></div>
 
                 <div class="news-top">
@@ -159,10 +167,11 @@
                     <div class="others-title"><a href="#.">《中医药振兴发展重大工程实施方案》解读</a></div>
                     <div class="others-time">2023-03-06 </div>
                 </div>
+                 </div>
             </div>
-         </section>
+         </div>
         <!-- 养生中国 -->
-         <section id="regimen">
+         <div id="regimen">
             <h2>养生中国</h2>
             <!-- 节气养生 -->
              <div class="regimen-part">
@@ -209,9 +218,9 @@
                 </div>
                 
              </div>
-         </section>
+         </div>
         <!-- 名 -->
-         <section id="famous">
+         <div id="famous">
             <h2>“名”</h2>
             <!-- 全国三甲中医院 -->
              <div class="famous-part" id="famous-part1">
@@ -269,9 +278,9 @@
                     <li><a href="#.">何任</a></li>
                 </ul>
              </div>
-         </section>
+         </div>
         <!-- 中药产业 -->
-         <section id="industry">
+         <div id="industry">
             <h2>中药产业</h2>
             <div class="industry-part" id="industry-part1">
                 <h3>企业展示</h3><div class="more"><a href="#.">更多>></a></div>
@@ -327,9 +336,9 @@
                     <div class="sell-shop">xxxx店</div>
                 </a>
             </div>
-         </section>
+         </div>
         <!-- 中医文化 -->
-         <section id="culture">
+         <div id="culture">
             <h2>中医文化</h2>
             <div class="culture-part" id="culture-part1">
                 <h3>历代名医</h3><div class="more"><a href="#.">更多>></a></div>
@@ -377,7 +386,7 @@
                 <h3>每日诵读</h3><div class="more"><a href="#.">更多>></a></div>
                 <p>【中医李常春的延安岁月】李常春（1909—1983年）陕西榆林绥德县河底乡人，陕甘宁边区中医专家。1909年，李常春出生于一个贫苦农家，8岁开始读书。1927年在中药店学徒谋生，开始熟悉中药、方剂，并自学中医，很快就成长为药店坐堂医生。李常春无门户之见，积极倡导中医、西医并举，为边区中西医结合工作打下了良好基础。</p>
             </div>
-         </section>
+         </div>
      </main>
 
     <!-- 悬浮按钮 -->

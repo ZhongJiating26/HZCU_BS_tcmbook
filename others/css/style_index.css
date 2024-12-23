@@ -5,19 +5,36 @@ body{
 
 /* 头部内容 */
 header{
-    background-color: black;
-    display: flex;
     width: 100%;
-    padding: 10px ;
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.9), hsla(0, 0%, 0%, 0));
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+#auto-nav{
+    display: flex;
+    width: 1200px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    font-size: 0.75rem;
+
+
 }
 /* 顶部导航栏 */
+#logo img{
+    width: 40px;
+    height: 40px;
+}
 nav{
-    background-color: black;
+
     color: white;
+    display: flex; 
+    justify-content: center; 
 }
 nav ul{
     display: flex;
-    margin: 0px;
+    margin: auto;
+    padding: 0px;
     border-width: 2px;
     list-style-type: none;  /*消除列表前的点*/
 }
@@ -30,6 +47,28 @@ nav ul li{
 /* 搜索框 */
 #search{
     display: flex;
+    margin-left: auto;
+    align-items: center; 
+}
+#search-input1{
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    padding: 2px 6px;
+    margin: auto 0;
+    height: 29px;
+    color: white;
+    background-color: hsl(0, 0%, 0%, 0.5);
+}
+#search-input2{
+    width: 66px;
+    border: none;
+    border-radius: 20px;
+    padding: 2px 6px;
+    margin: auto 0;
+    margin-right: 20px;
+    color: white;
+    background-color: hsl(0, 0%, 0%, 0.5);
 }
 /* 账户 */
 #account{
@@ -39,17 +78,59 @@ nav ul li{
     border-style: solid;
     padding: 2px 6px;
     border-radius: 20px;
-    margin: 0px 20px;
+    margin: auto 0 ;
+    margin-left: 0;
 }
 #account a{
     color: white;
 }
 
 /* 主内容 */
+main{
+    min-width: 1200px;
+}
 /* 横幅广告 */
-
+#banner{
+    position: relative;
+    z-index: 0;
+}
 #banner img{
     width: 100%;
+    height: 800px;
+}
+#turnleft{
+    position: absolute;
+    left: 0px;
+    top: 355px;
+    display: flex;
+    background-color: hsl(0,0%,0%,0.5);
+    height: 90px;
+    width: 50px;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+}
+#turnright{
+    position: absolute;
+    right: 0px;
+    top: 355px;
+    display: flex;
+    background-color: hsl(0,0%,0%,0.5);
+    height: 90px;
+    width: 50px;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+}
+#turnleft img{
+    width: 30px;
+    height: 50px;
+    position: relative;
+    left: 10px;
+}
+#turnright img{
+    width: 30px;
+    height: 50px;
+    position: relative;
+    left: 10px;
 }
 
 /* 超链接 */
@@ -57,3 +138,36 @@ a{
     text-decoration: none;  /*无下划线*/
     color: inherit;
 }
+
+
+
+h2{
+    font-size: 1.5rem;
+    border-left: 10px solid black;
+    padding-left: 10px;
+    background-color: hsl(0, 4%, 74%);
+    margin: 0px;
+    height: 44px;
+}
+
+
+/* 新闻中心 */
+.contant{
+    display: flex;
+}
+.smalltitle{
+    display: flex;
+}
+.more{
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+}
+.more a{
+    
+}
+/* 养生中国 */
+
+
+
+/* 新闻中心整体样式 */
