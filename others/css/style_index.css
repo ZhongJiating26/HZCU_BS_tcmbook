@@ -61,6 +61,7 @@ nav ul li{
     background-color: hsl(0, 0%, 0%, 0.5);
 }
 #search-input2{
+    height: 29px;
     width: 66px;
     border: none;
     border-radius: 20px;
@@ -72,6 +73,7 @@ nav ul li{
 }
 /* 账户 */
 #account{
+    height: 23px;
     display: flex;
     border-width: 1px;
     border-color: white;
@@ -83,6 +85,7 @@ nav ul li{
 }
 #account a{
     color: white;
+    margin: auto;
 }
 
 /* 主内容 */
@@ -140,7 +143,7 @@ a{
 }
 
 
-
+/* 分块标题 */
 h2{
     font-size: 1.5rem;
     border-left: 10px solid black;
@@ -151,23 +154,35 @@ h2{
 }
 
 
-/* 新闻中心 */
+/* 分块内容 */
 .contant{
     display: flex;
+    width: 80%;
+    margin: 0px auto;
+}
+/* 小板块 */
+.news-part{
+    width: 32%;
+    padding-right: 2%;
 }
 .smalltitle{
     display: flex;
+    border-bottom: 2px solid hsl(0, 2%, 32%);
+    height: 70px;
+    margin-bottom: 10px;
 }
 .more{
     margin-left: auto;
     align-items: center;
     display: flex;
 }
-.more a{
-    
+h3{
+    margin-bottom: 0px;
+    border-bottom: solid 3px hsl(0, 89%, 41%);
 }
+
 /* 养生中国 */
 
 
 
-/* 新闻中心整体样式 */
+
