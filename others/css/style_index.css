@@ -185,4 +185,23 @@ h3{
 
 
 
+/* 页脚 */
+footer{
+    background-color: gray;
+    width: 100%;
+}
 
+.relative-website{
+    width: 1200px;
+    margin: auto;
+
+}
+
+.relative-website ul{
+    display: flex;
+    margin: auto;
+}
+
+.relative-website ul li{
+    margin: auto;
+}
