@@ -209,27 +209,65 @@ footer{
 }
 
 .foot-nav{
-    width: 1200px;
+    width: 1600px;
     display: flex;
     margin: auto;
     border-bottom: solid 1px white;
-    
+    font-size: 0.8rem;
 }
 .foot-nav ul{
-    width: 1000px;
-    display: flex;
-    margin: auto;
     list-style-type: none;
-    justify-content: space-between; 
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .foot-nav ul li{
     margin: auto;
 }
+#foot-nav-main{
+    padding-left: 0px;
+    width: 700px;
+    display: flex;
+    margin-left: 0;
+    list-style-type: none;
+    justify-content: space-between; 
+}
+
+
 #bottom-nav-logo{
     width: 40px;
     height: 40px;
 }
 
+
+
 footer{
     color: white;
+}
+#foot-nav-others li a img{
+    height: 28px;
+    width: 28px;
+}
+#foot-nav-others li{
+    margin: 0px 10px;
+}
+#foot-nav-others{
+    display: flex;
+    width: 200px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+
+/* 版权信息 */
+#foot-copyright{
+    color: hsl(0, 1%, 67%);
+    width: 1600px;
+    margin: auto;
+    font-size: 0.8rem;
+}
+#foot-copyright div{
+    padding: 10px 0px;
+}
+address{
+    padding: 10px 0px 30px;
 }
