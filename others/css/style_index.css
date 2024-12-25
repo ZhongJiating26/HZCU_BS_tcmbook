@@ -187,8 +187,9 @@ h3{
 
 /* 页脚 */
 footer{
-    background-color: gray;
+    background-color: hsl(0, 0%, 23%);
     width: 100%;
+
 }
 
 .relative-website{
@@ -200,8 +201,35 @@ footer{
 .relative-website ul{
     display: flex;
     margin: auto;
+    list-style-type: none;
 }
 
 .relative-website ul li{
     margin: auto;
+}
+
+.foot-nav{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    border-bottom: solid 1px white;
+    
+}
+.foot-nav ul{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+    justify-content: space-between; 
+}
+.foot-nav ul li{
+    margin: auto;
+}
+#bottom-nav-logo{
+    width: 40px;
+    height: 40px;
+}
+
+footer{
+    color: white;
 }
