@@ -186,17 +186,40 @@ h3{
 
 
 /* 页脚 */
+/* 底部相关网站 */
+.relative-website{
+    width: 1200px;
+    margin: auto auto 80px auto;
+}
+
+.relative-website ul{
+    padding-top: 20px;
+    padding-left: 0px;
+}
+.website-logo{
+    width:200px;
+}
+#zjgov-logo{
+    width:230px
+}
+#tcmlargelogo{
+    height: 60px;
+    width: 180px;
+}
+#websitefirst{
+    margin-left: 0px;
+}
+#websitelast{
+    margin-right: 0px;
+}
+/* 底部导航 */
 footer{
     background-color: hsl(0, 0%, 23%);
     width: 100%;
 
 }
 
-.relative-website{
-    width: 1200px;
-    margin: auto;
 
-}
 
 .relative-website ul{
     display: flex;
