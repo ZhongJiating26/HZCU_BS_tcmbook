@@ -145,30 +145,32 @@ a{
 
 /* 分块标题 */
 h2{
+    width: 85%;
+    min-width: 1200px;
+    display: flex;
     font-size: 1.5rem;
     border-left: 10px solid black;
     padding-left: 10px;
     background-color: hsl(0, 4%, 74%);
-    margin: 0px;
+    margin: auto;
     height: 44px;
+    align-items: center;
 }
 
 
 /* 分块内容 */
 .contant{
     display: flex;
-    width: 80%;
+    width: 85%;
+    min-width: 1200px;
     margin: 0px auto;
 }
 /* 小板块 */
-.news-part{
-    width: 32%;
-    padding-right: 2%;
-}
+
 .smalltitle{
     display: flex;
     border-bottom: 2px solid hsl(0, 2%, 32%);
-    height: 70px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 .more{
@@ -178,13 +180,54 @@ h2{
 }
 h3{
     margin-bottom: 0px;
+    margin-top: 0px;
     border-bottom: solid 3px hsl(0, 89%, 41%);
 }
 
+/* 新闻中心 */
+.news-part{
+    width: 32%;
+    padding-right: 2%;
+}
 /* 养生中国 */
-
-
-
+/* 名 */
+#famous-part1{
+    width: 20%;
+}
+#famous-part2{
+    width: 32%;
+}
+#famous-part3{
+    width: 32%;
+}
+#famous-part3-list,#famous-part2-list{
+    display: flex;
+}
+#famous ul{
+    list-style-type: none;
+}
+/* 中药产业 */
+#industry-part1{
+    width: 30%;
+    margin-right: 25px;
+}
+#industry-part2{
+    width: 68%;
+}
+#buy{
+    display: flex;
+}
+/* 中医文化 */
+#culture-part1,#culture-part2{
+    width: 37%;
+    margin-right: 26px;
+}
+#culture-part3{
+    width: 20%;
+}
+#culture-doctor{
+    display: flex;
+}
 /* 页脚 */
 /* 底部相关网站 */
 .relative-website{
