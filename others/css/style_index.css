@@ -11,16 +11,19 @@ header{
     top: 0px;
     z-index: 1;
 }
+
+
+
+/* 顶部导航栏 */
 #auto-nav{
     display: flex;
     width: 1200px;
-    padding: 10px 0px;
+    padding: 0px;
     margin: 0px auto;
     font-size: 0.75rem;
-
-
+    height: 64px;
+    align-items: center;
 }
-/* 顶部导航栏 */
 #logo img{
     width: 40px;
     height: 40px;
@@ -33,36 +36,51 @@ nav{
 }
 nav ul{
     display: flex;
-    margin: auto;
+    height: 64px;
+    margin: 0px auto;
     padding: 0px;
     border-width: 2px;
     list-style-type: none;  /*消除列表前的点*/
 }
 nav ul li{
-    padding: 0px 20px;
+    padding: 20px 20px;
+}
+nav ul li:hover{
+    background-color: black;
 }
 #dropdown-famous{
-    display: block;
+    display: none;
     position: absolute;
-    left: -1px;
-    top: 40.25px;
+    left: 0px;
+    top: 64px;
     background-color: hsla(0, 0%, 0%, 0.2);
-    /* height: 100px; */
-    width: 62.25px;
+    width: 70.88px;
+    height: auto;
+    border-radius: 0 0 5px 5px;
+}
+#dropdown-famous li:last-child{
+    padding-bottom: 10px;
 }
 #dropdown-famous li{
-    /* display: block; */
     padding: 5px;
     text-align: center;
 }
 #dropdown-famous li a{
     width: 30px;
 }
-nav li:nth-of-type(4){
+#nav-ming{
     position: relative;
-    background-color: black;
 }
-
+#nav-ming:hover{
+    background-color: black;
+    #dropdown-famous{
+        display: block;
+    }
+}
+#dropdown-famous li:hover{
+    background-color: black;
+    
+}
 
 /* 搜索框 */
 #search{
