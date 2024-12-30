@@ -111,6 +111,10 @@ nav ul li:hover{
     color: white;
     background-color: hsl(0, 0%, 0%, 0.5);
 }
+#search-input2:hover{
+    color: hsl(28, 81%, 46%);
+    background-color: bisque;
+}
 /* 账户 */
 #account{
     height: 23px;
@@ -126,6 +130,11 @@ nav ul li:hover{
 #account a{
     color: white;
     margin: auto;
+}
+#account:hover{
+    a{color: hsl(28, 81%, 46%);}
+    background-color: bisque;
+    border-color: hsl(28, 81%, 46%);
 }
 
 /* 主内容 */
@@ -225,7 +234,7 @@ h2{
     color: gray;
 }
 a.more-a:hover{
-    color: rgb(232, 156, 156);
+    color: hsl(28, 81%, 46%);
 }
 
 h3{
@@ -338,18 +347,29 @@ h3{
     height: 80px;
 }
 /* 名 */
-#famous-part1{
-    width: 20%;
+.famous-part{
+    width: 31%;
 }
-#famous-part2{
-    width: 32%;
+.famous-part ul{
+    line-height: 40px;
 }
-#famous-part3{
-    width: 32%;
+#famous-part1,#famous-part2{
+    margin-right: 42px;
 }
 #famous-part3-list,#famous-part2-list{
     display: flex;
 }
+#famous-part2-list,#famous-part3-list{
+    justify-content: space-around;
+}
+#famous a:hover{
+    color: hsl(28, 98%, 44%);
+}
+#famous-part1 ul,#famous-part2-list ul,#famous-part3-list ul{
+    margin: 0px;
+    padding: 0px;
+}
+
 #famous ul{
     list-style-type: none;
 }
