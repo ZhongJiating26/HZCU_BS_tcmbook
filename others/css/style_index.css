@@ -44,6 +44,7 @@ nav ul{
 }
 nav ul li{
     padding: 20px 20px;
+    transition: background-color 0.75s ease;
 }
 nav ul li:hover{
     background-color: black;
@@ -258,6 +259,7 @@ h3{
 .news-others{
     font-size: 0.9rem;
     display: flex;
+    line-height: 30px;
 }
 .others-title{
     flex:1 1 303px;
@@ -266,11 +268,66 @@ h3{
     white-space: nowrap;
 }
 .others-time{
-    flex: 0 0 74px;
-    font-family:Arial, Helvetica, sans-serif;
+    flex: 0 0 115px;
     margin-left: auto;
 }
+.news-top{
+    margin-bottom: 10px;
+}
 /* 养生中国 */
+.regimen-part{
+    width: 32%;
+}
+.regimen-part:first-child,.regimen-part:nth-of-type(2){
+    margin-right: 30px;
+}
+/* 节气养生 */
+
+#jieqi-img img{
+    width: 100%;
+}
+#roll-text{
+    background-color: antiquewhite;
+}
+/* 药膳食疗 */
+#in1-content{
+    display: flex;
+}
+#in1-img{
+    width: 30%;
+}
+#regimen-p2-content{
+    width: 65%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+#in1-img img{
+    width: 100%;
+}
+/* 养生漫画 */
+#regimen-part3{
+    display: flex;
+}
+.regimen-part3-img{
+    width: 50%;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.regimen-part3-img a{
+    display: flex;
+    height: 185px;
+}
+#regimen-part3 img{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.regimen-imgtitle{
+    text-align: center;
+}
+.regimen-part3-img:hover{
+    box-shadow: 0px 0px 15px 5px hsl(0, 0%, 62%);
+}
 /* 节气养生 */
 #regimen-p1 img{
     width: 200px;
@@ -325,13 +382,9 @@ h3{
 
 
 /* 中医文化 */
-#culture-tour-pictures{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-}
 .culture-part:first-child{
-    width: 37%;
+    width: 35%;
+    margin-right: 26px;
 }
 .culture-part:nth-of-type(2){
     width: 50%;
@@ -342,6 +395,49 @@ h3{
 }
 #culture-doctor{
     display: flex;
+    justify-content: space-between;
+    width: 98%;
+}
+.culture-doctor{
+    width: 30%;
+}
+.culture-doctor img{
+    width: 100%;
+    height: 100%;
+    border: solid 3px hsl(28, 81%, 46%);
+}
+@font-face{
+    font-family: "doctor-name-font" ;
+    src: url("/others/fonts/YeZiGongChangZhuRiHanLiTi-2.ttf");
+}
+.doctor-name{
+    font-family: doctor-name-font;
+}
+.culture-doctor:hover{
+    img{
+        box-shadow: 0px 0px 15px 5px hsl(0, 0%, 62%);
+    }
+}
+.doctor-name{
+    display: block;
+    text-align: center;
+}
+.culture-tour-pictures{
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.culture-tour-pictures li{
+    width: 30%;
+    margin: 10px;
+}
+.culture-tour img{
+    width: 100%;
+    height: 100%;
+}
+.culture-tour-pictures li:hover{
+    box-shadow: 0px 0px 15px 5px hsl(0, 0%, 62%);
 }
 /* 页脚 */
 /* 底部相关网站 */
