@@ -54,7 +54,7 @@ nav ul li:hover{
     left: 0px;
     top: 64px;
     background-color: hsla(0, 0%, 0%, 0.2);
-    width: 70.88px;
+    width: 70px;
     height: auto;
     border-radius: 0 0 5px 5px;
 }
@@ -70,6 +70,7 @@ nav ul li:hover{
 }
 #nav-ming{
     position: relative;
+    width: 30px;
 }
 #nav-ming:hover{
     background-color: black;
@@ -233,6 +234,9 @@ h3{
 }
 
 /* 新闻中心 */
+#news{
+    margin-bottom: 20px;
+}
 .news-part{
     width: 32%;
     padding-right: 2%;
@@ -251,7 +255,31 @@ h3{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.news-others{
+    font-size: 0.9rem;
+    display: flex;
+}
+.others-title{
+    flex:1 1 303px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.others-time{
+    flex: 0 0 74px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: auto;
+}
 /* 养生中国 */
+/* 节气养生 */
+#regimen-p1 img{
+    width: 200px;
+    height: 150px;
+}
+#regimen-p2 img{
+    width: 60px;
+    height: 80px;
+}
 /* 名 */
 #famous-part1{
     width: 20%;
@@ -297,12 +325,20 @@ h3{
 
 
 /* 中医文化 */
-.culture-part:first-of-type,.culture-part:nth-of-type(2){
+#culture-tour-pictures{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.culture-part:first-child{
     width: 37%;
+}
+.culture-part:nth-of-type(2){
+    width: 50%;
     margin-right: 26px;
 }
-#culture-part3{
-    width: 20%;
+.culture-part:nth-of-type(3){
+    width: 26%;
 }
 #culture-doctor{
     display: flex;
