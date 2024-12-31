@@ -1,13 +1,14 @@
 /* body整个 */
 body{
     margin: 0px;
+    background-color: hsl(0, 0%, 96%);
 }
 /* 悬浮按钮 */
 .suspension{
     position: fixed;
-    width: 80px;
+    width: 70px;
     height: 200px;
-    top: 300px;
+    bottom: 200px;
     right: 0px;
 }
 
@@ -23,19 +24,91 @@ body{
 .sustxt{
     display: flex;
     justify-content: center;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     margin-top: 5px;
 }
 #sus-open{
     background-color: white;
+    box-shadow: 0px 0px 10px 1px hsl(0, 0%, 90%);
 }
 .sus-open-part{
     display: block;
-    width: 80px;
-    height: 80px;
-    border: solid 1px black;
-
+    width: 70px;
+    height: 70px;
+    position: relative;
 }
+.sus-open-part:last-child,.sus-open-part:nth-child(2){
+    border-top: solid 1px hsl(0, 0%, 86%);
+}
+
+/* 二维码 */
+#QRcode{
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    background-color: white;
+    border: solid 1px hsl(0, 0%, 86%);
+    box-shadow: 0px 0px 10px 1px hsl(0, 0%, 90%);
+}
+#QRcode img{
+    width: 200px;
+    height: 200px;
+}
+#QRcode p{
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    margin: 0px 0px 10px 0px;
+}
+.sus-open-part:nth-child(2):hover{
+    #QRcode{
+        display: block;
+    }
+}
+/* 回顶部 */
+#sus-backtop{
+    display: block;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 1px hsl(0, 0%, 90%);
+}
+#backtop-img{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+#backtop-img img{
+    width: 35px;
+    height: 35px;
+}
+#backtop-txt{
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+/* 广告 */
+#ad{
+    display: block;
+    position: fixed;
+    width: 100px;
+    bottom: 75px;
+    left: 0px;
+}
+#ad-img{
+    display: flex;
+}
+#ad-img img{
+    width: 100px;
+    height: 370px;
+}
+#ad button{
+    width: 100px;
+    font-weight: lighter;
+}
+
 /* 头部内容 */
 header{
     width: 100%;
@@ -44,8 +117,6 @@ header{
     top: 0px;
     z-index: 1;
 }
-
-
 
 /* 顶部导航栏 */
 #auto-nav{
@@ -312,6 +383,7 @@ h3{
 }
 .news-others:hover{
     box-shadow: 5px 5px 15px 1px hsl(0, 0%, 62%);
+    border-radius: 5px;
 }
 .others-title{
     width: 75%;
@@ -425,16 +497,7 @@ h3{
 #industry-part2{
     width: 63%;
 }
-#buy{
-    display: flex;
-    justify-content: space-between;
-}
 
-.before-price{
-    color: gray;
-    text-decoration-line: line-through;
-    margin-left: 10px;
-}
 
 .enterprise p {
     display: -webkit-box;         /* 使用弹性盒子模型 */
@@ -466,29 +529,59 @@ h3{
     margin-left: 10px;
 }
 /* 药材购买 */
-#industry-part2{
-    margin-bottom: 10px;
+#buy{
+    display: flex;
+    justify-content: space-between;
 }
-#smalltitle-buy{
-    margin-bottom: 5px;
-}
+
 .sell{
-    padding:10px 2px 2px 2px;
-    border: solid rgb(137, 137, 137) 1px;
-    margin: 0;
+    width: 23%;
+    line-height: 28px;
+    border: solid 1px hsla(0, 0%, 0%, 0);
+    border-radius: 10px;
+    padding: 2px;
+}
+.sell:hover{
+    border-color: hsl(18, 100%, 50%);
 }
 .allprice{
     display: flex;
 }
 .sell img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sell-info{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.allprice{
     display: flex;
-    margin: 0 auto;
-    width: 160px; height: 180px;
+    align-items: center;
+}
+.sell-price{
+    color: hsl(18, 100%, 50%);
+    font-weight: bolder;
+}
+.before-price{
+    font-size: 0.75rem;
+    color: gray;
+    text-decoration-line: line-through;
+    margin-left: 10px;
 }
 .sell-place{
     font-size: 0.75rem;
 }
-
+.sell-activity{
+    font-size: 0.75rem;
+    color: hsl(18, 100%, 50%);
+}
+.sell-shop{
+    font-size: 0.75rem;
+    color: gray;
+}
 /* 中医文化 */
 .culture-part:first-child{
     width: 35%;
