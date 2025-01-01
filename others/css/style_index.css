@@ -121,7 +121,7 @@ header{
 /* 顶部导航栏 */
 #auto-nav{
     display: flex;
-    width: 1200px;
+    width: 1400px;
     padding: 0px;
     margin: 0px auto;
     font-size: 0.75rem;
@@ -250,7 +250,7 @@ nav ul li:hover{
 
 /* 主内容 */
 main{
-    min-width: 1200px;
+    min-width: 1620px;
 }
 /* 横幅广告 */
 #banner{
@@ -463,6 +463,9 @@ h3{
     height: 80px;
 }
 /* 名 */
+#famous{
+    margin-bottom: 20px;
+}
 .famous-part{
     width: 31%;
 }
@@ -475,8 +478,11 @@ h3{
 #famous-part3-list,#famous-part2-list{
     display: flex;
 }
+#famous-part3-list ul:first-child{
+    margin-left: 10px;
+}
 #famous-part2-list,#famous-part3-list{
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #famous a:hover{
     color: hsl(28, 98%, 44%);
@@ -489,6 +495,20 @@ h3{
 #famous ul{
     list-style-type: none;
 }
+
+[class^="fa-solid fa-"]::before{
+    margin-right: 10px;
+    display: flex;
+    width: 28px;
+    height: 28px;
+    color: white;
+    background-color: hsl(28, 98%, 44%);
+    justify-content: center;
+    align-items: center;
+}
+[class="fa-duotone fa-solid fa-user"]{
+    margin-right: 10px;
+}
 /* 中药产业 */
 #industry-part1{
     width: 35%;
@@ -497,7 +517,6 @@ h3{
 #industry-part2{
     width: 63%;
 }
-
 
 .enterprise p {
     display: -webkit-box;         /* 使用弹性盒子模型 */
@@ -643,7 +662,7 @@ h3{
 /* 页脚 */
 /* 底部相关网站 */
 .relative-website{
-    width: 1200px;
+    width: 1400px;
     margin: auto auto 80px auto;
 }
 
@@ -687,7 +706,7 @@ footer{
 }
 
 .foot-nav{
-    width: 1200px;
+    width: 1400px;
     display: flex;
     margin: auto;
     border-bottom: solid 1px white;
@@ -740,7 +759,7 @@ footer{
 /* 版权信息 */
 #foot-copyright{
     color: hsl(0, 1%, 67%);
-    width: 1200px;
+    width: 1400px;
     margin: auto;
     font-size: 0.8rem;
 }
