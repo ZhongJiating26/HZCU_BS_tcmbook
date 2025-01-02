@@ -91,7 +91,7 @@ body{
 
 /* 广告 */
 #ad{
-    display: block;
+    display: block; 
     position: fixed;
     width: 100px;
     bottom: 75px;
@@ -250,7 +250,7 @@ nav ul li:hover{
 
 /* 主内容 */
 main{
-    min-width: 1620px;
+    min-width: 1400px;
 }
 /* 横幅广告 */
 #banner{
@@ -357,6 +357,16 @@ h3{
 /* 新闻中心 */
 #news{
     margin-bottom: 20px;
+}
+[class^="fa-duotone fa-solid fa-calendar-days"]{
+    font-size: 1.25rem;
+    margin-right: 8px;
+}
+#news h2 p{
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: 20px;
+    font-weight: lighter;
 }
 .news-part{
     width: 32%;
@@ -689,6 +699,7 @@ h3{
 /* 底部导航 */
 footer{
     background-color: hsl(0, 0%, 23%);
+    min-width: 1400px;
     width: 100%;
 
 }
