@@ -29,3 +29,9 @@ function showtime(){
     time+=(datetime.getSeconds()<10? `0${datetime.getSeconds()}`:`${datetime.getSeconds()}`);
     document.getElementById("date-time").innerHTML=`<i class="fa-duotone fa-solid fa-calendar-days"></i>${date} ${time}`;
 }
+
+
+// 广告
+document.getElementById("ad-button").addEventListener('click',function(){
+    document.getElementById("ad").style.display="none";
+},false)

@@ -170,9 +170,6 @@ nav ul li:hover{
 }
 #dropdown-famous li{
     padding: 5px;
-    text-align: center;
-}
-#dropdown-famous li a{
     justify-content: center;
 }
 #nav-ming{
@@ -613,7 +610,7 @@ h3{
 }
 /* 中医文化 */
 .culture-part:first-child{
-    width: 35%;
+    width: 39%;
     margin-right: 26px;
 }
 .culture-part:nth-of-type(2){
@@ -621,7 +618,7 @@ h3{
     margin-right: 26px;
 }
 .culture-part:nth-of-type(3){
-    width: 26%;
+    width: 22%;
 }
 #culture-doctor{
     display: flex;
