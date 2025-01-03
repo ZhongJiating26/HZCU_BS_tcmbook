@@ -1,3 +1,5 @@
+
+
 // 设置日期
 var datetime=new Date();
 var date='';
@@ -114,3 +116,5 @@ window.addEventListener('scroll', function () {
         backToTopButton.style.display='none';
     }
 });
+
+window.alert("好消息！！！我们接到了第一个广告\n非常感谢来自浙江省回浦中学23届毕业生❤️李航❤️同学的支持");

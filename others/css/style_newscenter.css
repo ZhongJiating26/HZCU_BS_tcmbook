@@ -94,16 +94,21 @@ body{
 #ad{
     display: block; 
     position: fixed;
-    width: 90px;
-    bottom: 75px;
-    left: 0px;
+    /* width: 90px; */
+    width: 640px;
+    /* bottom: 75px; */
+    /* left: 0px; */
+    bottom: 25px;
+    left: 50px;
 }
 #ad-img{
     display: flex;
 }
 #ad-img img{
-    width: 90px;
-    height: 370px;
+    /* width: 90px; */
+    /* height: 370px; */
+    width: 640px;
+    height: 853px;
 }
 #ad button{
     width: 90px;
