@@ -341,7 +341,7 @@ h2{
 #box-title1{
     width: 90px;
     display: flex;
-    background-color: hsl(28, 81%, 46%);
+    background-color: hsl(28, 100%, 80%);
     align-items: center;
     justify-content: center;
     border-top-left-radius: 10px;
@@ -350,7 +350,7 @@ h2{
 #box-title2{
     width: 90px;
     display: flex;
-    background-color: hsl(28, 100%, 80%);
+    background-color: hsl(28, 81%, 46%);
     align-items: center;
     justify-content: center;
     border-top-left-radius: 10px;
@@ -372,9 +372,19 @@ h2{
     margin-right: auto;
 }
 #box-video{
-    display: none;
+    display: flex;
+    background-color: hsl(28, 100%, 80%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 391px;
+    justify-content: center;
+    align-items: center;
+}
+#box-video video{
+    width: 90%;
 }
 #box-img{
+    display: none;
     background-color: hsl(28, 100%, 80%);
     padding: 0px 10px;
     border-bottom-right-radius: 10px;
