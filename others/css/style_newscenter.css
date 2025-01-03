@@ -5,6 +5,7 @@ body{
 }
 /* 悬浮按钮 */
 .suspension{
+    display: none;
     position: fixed;
     width: 70px;
     height: 200px;
