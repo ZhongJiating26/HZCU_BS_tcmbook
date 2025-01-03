@@ -18,3 +18,14 @@ document.getElementById("box-title2").addEventListener('click',function(){
     document.getElementById("box-title1").style.backgroundColor="hsl(28, 81%, 46%)";
     document.getElementById("onlyvideo").pause();
 },false);
+
+// 回到顶部
+window.addEventListener('scroll', function () {
+    var backToTopButton=document.getElementById('suspension');
+    var scrollPosition=document.documentElement.scrollTop;
+    if (scrollPosition>100) {
+        backToTopButton.style.display='block';
+    } else {
+        backToTopButton.style.display='none';
+    }
+});

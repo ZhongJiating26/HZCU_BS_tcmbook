@@ -57,9 +57,14 @@
      <main>
         <!-- 横幅广告 -->
          <div id="banner">
-            <img src="others/images/henfu-2.jpg" alt="横幅广告图片">
+            <img src="others/images/henfu2.jpg" alt="横幅广告图片" id="henfu"> 
             <div id="turnleft"><img src="others/images/turn-left.svg" alt="向左"></div>
             <div id="turnright"><img src="others/images/turn-right.svg" alt="向右"></div>
+            <div id="allpoint">
+                <a href="#." class="point" id="point1"></a>
+                <a href="#." class="point" id="point2"></a>
+                <a href="#." class="point" id="point3"></a>
+            </div>
          </div>
 
          <!-- 热点 -->
@@ -505,27 +510,27 @@
      </main>
 
     <!-- 悬浮按钮 -->
-    <div class="suspension">
+    <div class="suspension" id="suspension">
         <div id="sus-others">
             <!-- 打开按钮 -->
             <div id="open-close"></div>
 
             <!-- 打开后的内容 -->
              <div id="sus-open">
-                <a href="#." class="sus-open-part">
-                    <div class="susimg"><img src="others/images/icon-在线客服-black.png" alt="在线客服图片"></div>
+                <a href="#." class="sus-open-part" id="sus-open-part1">
+                    <div class="susimg"><img src="others/images/icon-在线客服-black.png" alt="在线客服图片" onmouseover="this.src='others/images/icon-在线客服-blue.png'" onmouseout="this.src='others/images/icon-在线客服-black.png'"></div>
                     <div class="sustxt">在线客服</div>
                 </a>
-                <a href="#." class="sus-open-part">
-                    <div class="susimg"><img src="others/images/icon-二维码-black.png" alt="移动端图片"></div>
+                <a href="#." class="sus-open-part" id="sus-open-part2">
+                    <div class="susimg"><img src="others/images/icon-二维码-black.png" alt="移动端图片" onmouseover="this.src='others/images/icon-二维码-blue.png'" onmouseout="this.src='others/images/icon-二维码-black.png'"></div>
                     <div class="sustxt">移动端</div>
                     <div id="QRcode">
                         <img src="others/images/QRcodedxp.jpg" alt="二维码">
                         <p>TCM本草书APP</p>
                     </div>
                 </a>
-                <a href="#." class="sus-open-part">
-                    <div class="susimg"><img src="others/images/icon-会员中心-black.png" alt="会员中心图片"></div>
+                <a href="#." class="sus-open-part" id="sus-open-part3">
+                    <div class="susimg"><img src="others/images/icon-会员中心-black.png" alt="会员中心图片" onmouseover="this.src='others/images/icon-会员中心-blue.png'" onmouseout="this.src='others/images/icon-会员中心-black.png'"></div>
                     <div class="sustxt">会员中心</div>
                 </a>
              </div>
