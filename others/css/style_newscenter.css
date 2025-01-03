@@ -96,7 +96,6 @@ body{
     width: 90px;
     bottom: 75px;
     left: 0px;
-    z-index: -1;
 }
 #ad-img{
     display: flex;
