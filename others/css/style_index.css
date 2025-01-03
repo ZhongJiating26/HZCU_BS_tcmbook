@@ -691,6 +691,29 @@ h3{
     box-shadow: 0px 0px 15px 5px hsl(0, 0%, 62%);
 }
 /* 页脚 */
+footer{
+    padding-top: 40px;
+}
+footer hr{
+    width: 1200px;
+}
+#foot-category{
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    line-height: 2rem;
+    font-size: 0.9rem;
+}
+#foot-category ul{
+    padding: 0px;
+    list-style-type: none;
+    font-weight: bolder;
+}
+#foot-category ul li{
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
 /* 底部相关网站 */
 .relative-website{
     width: 1200px;
