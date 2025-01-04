@@ -211,6 +211,7 @@ nav ul li:hover{
     height: 29px;
     color: white;
     background-color: hsl(0, 0%, 0%, 0.5);
+    outline: none;
 }
 #search-input2{
     height: 29px;
