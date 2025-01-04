@@ -322,6 +322,10 @@ a{
     width: 30px;
     height: 30px;
 }
+#tool ul{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
 /* 内容侧栏 */
 #contentAndother{
     margin: 0 auto;
@@ -352,12 +356,14 @@ a{
 #othersidelist ul{
     list-style-type: none;
     padding: 0px;
+    margin: 0px auto;
+    width: 95%;
 }
 .othersidetitle{
     display: flex;
     border-bottom: 2px solid hsl(0, 0%, 51%);
     margin-top: 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
 }
 .more{
     margin-left: auto;
@@ -377,14 +383,63 @@ h3{
     width: 1rem;
     height: 1rem;
 }
-/* 评论 */
-#discussion{
-    margin: 0 auto;
-    width: 80%;
+#othersidelist ul li{
+    margin: 5px 0px;
+}
+#othersidelist ul li a{
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
+#othersidelist ul li p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0px;
+}
+/* 评论 */
+#discussion{
+    margin: 10px auto;
+    width: 80%;
+}
+#say{
+    display: block;
+}
 
+#saytitle{
+    display: flex;
+    /* margin-left: 10px; */
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+}
+#saytitle p{
+    padding: 5px;
+    padding-bottom: 0px;
+    margin: 0px;
+    background-color: hsl(28, 81%, 46%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+#say textarea{
+    font-size: 1.1rem;
+    width: 100%;
+    border: solid 2px hsl(28, 81%, 46%);
+}
+#saybutton form{
+    display: flex;
+}
+#saybutton form button{
+    font-size: 1.2rem;
+    background-color: hsl(28, 81%, 46%);
+    color: white;
+    border: white;
+    margin-left: auto;
+    margin-right: 0px;
+}
 
 /* 页脚 */
 footer{
