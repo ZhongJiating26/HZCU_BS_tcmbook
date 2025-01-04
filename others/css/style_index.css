@@ -94,22 +94,19 @@ body{
 /* 广告 */
 #ad{
     display: block; 
-    position: fixed;
-    /* width: 90px; */
-    width: 640px;
-    /* bottom: 75px; */
-    /* left: 0px; */
-    top: 50px;
-    left: 50px;
+    position: absolute;
+    width: 90px;
+    bottom: 75px;
+    left: 0px;
+    top: 20px;
+    
 }
 #ad-img{
     display: flex;
 }
 #ad-img img{
-    /* width: 90px; */
-    /* height: 370px; */
-    width: 640px;
-    height: 853px;
+    width: 90px;
+    height: 370px;
 }
 #ad button{
     width: 90px;
@@ -386,6 +383,7 @@ h3{
 /* 新闻中心 */
 #news{
     margin-bottom: 20px;
+    position: relative;
 }
 [class^="fa-duotone fa-solid fa-calendar-days"]{
     font-size: 1.25rem;
