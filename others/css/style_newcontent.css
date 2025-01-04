@@ -120,10 +120,11 @@ body{
     position: sticky;
     z-index: 100;
     top: 0;
+    width: 100%;
 }
 header{
     width: 100%;
-    min-width: 1200px;
+    min-width: 1400px;
     background: hsl(0, 0%, 0%);
 }
 
@@ -270,45 +271,116 @@ a{
 
 /* 标题 */
 #titleAndwhere{
-    margin: 0 auto;
-    width: 85%;
+    margin: 30px auto 20px auto;
+    width: 80%;
     display: flex;
     justify-content: space-between;
+}
+#title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+#where{
+    display: flex;
+    align-items: last baseline;
+    font-size: 0.8rem;
 }
 /* 工具栏 */
 #info-tool{
     margin: 0 auto;
-    width: 85%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
+    border-top: solid hsl(0, 0%, 50%) 1px;
+    border-bottom: solid hsl(0, 0%, 50%) 1px;
+    padding-top: 5px;
+    padding: 5px;
+    background-color: hsl(27, 100%, 86%);
+}
+#info{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+#tool{
+    margin-right: 20px;
 }
 #tool ul{
     display: flex;
+    list-style-type: none;
+    margin: 0px;
+}
+#tool ul li{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+#tool ul li a{
+    display: flex;
+}
+#tool ul li img{
+    width: 30px;
+    height: 30px;
 }
 /* 内容侧栏 */
 #contentAndother{
     margin: 0 auto;
-    width: 85%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
 /* 内容 */
 #maincontent{
-    width: 70%;
+    width: 60%;
+    margin: 30px auto 0px auto; 
+    border: solid gray 1px;
+    padding: 30px;
+    text-indent: 2rem;
 }
 #maincontent img{
     display: flex;
     margin: 0 auto;
     width: 80%;
 }
+#maincontent p:first-child{
+    margin-top: 0px;
+}
 /* 侧栏 */
 #otherside{
     width: 30%;
 }
+#othersidelist ul{
+    list-style-type: none;
+    padding: 0px;
+}
+.othersidetitle{
+    display: flex;
+    border-bottom: 2px solid hsl(0, 0%, 51%);
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+.more{
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+    color: gray;
+}
+.more-a:hover{
+    color: hsl(28, 81%, 46%);
+}
+h3{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-bottom: solid 3px hsl(0, 89%, 41%);
+}
+#arrow-right{
+    width: 1rem;
+    height: 1rem;
+}
 /* 评论 */
 #discussion{
     margin: 0 auto;
-    width: 85%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
