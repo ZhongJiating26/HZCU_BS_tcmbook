@@ -95,8 +95,8 @@ body{
     display: block; 
     position: absolute;
     width: 90px;
-    top: 75px;
-    left: -145px;
+    left: 0px;
+    top: 400px;
     z-index: 50;
 }
 #ad-img{
@@ -115,6 +115,7 @@ body{
     width: 100%;
     min-width: 1400px;
     height: 250px;
+    position: relative;
 }
 #top-img img{
     width: 100%;
@@ -285,7 +286,6 @@ a{
     display: flex;
     align-items: center;
     border-bottom: solid 8px hsl(28, 81%, 46%);
-    position: relative;
 }
 #where{
     margin-left: auto;
