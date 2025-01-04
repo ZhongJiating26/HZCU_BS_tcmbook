@@ -130,7 +130,7 @@ body{
 header{
     width: 100%;
     min-width: 1400px;
-    background: hsl(0, 0%, 0%);
+    background: hsl(28, 89%, 45%);
 }
 
 /* 顶部导航栏 */
@@ -205,7 +205,7 @@ nav ul li:hover{
     }
 }
 #dropdown-famous li:hover{
-    background-color: black;
+    background-color: hsl(28, 89%, 45%);
     color: white;
     
 }
@@ -577,7 +577,7 @@ footer hr{
 }
 /* 底部导航 */
 footer{
-    background-color: hsl(0, 0%, 23%);
+    background-color: hsl(28, 89%, 45%);
     min-width: 1400px;
     width: 100%;
 
@@ -648,7 +648,7 @@ footer{
 
 /* 版权信息 */
 #foot-copyright{
-    color: hsl(0, 1%, 67%);
+    /* color: hsl(0, 1%, 67%); */
     width: 1200px;
     margin: auto;
     font-size: 0.8rem;
