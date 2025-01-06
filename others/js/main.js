@@ -1,5 +1,4 @@
 
-
 // 设置日期
 var datetime=new Date();
 var date='';
@@ -40,68 +39,56 @@ document.getElementById("ad-button").addEventListener('click',function(){
 
 
 // 轮播图片
-var count = 1;
-var a = [...document.querySelectorAll('#banner a')];
-var carouselID = window.setInterval("carousel()", 2000);
-for (let i = 0; i < a.length; i++) {
-    a[i].addEventListener('click', function () {
-        count = i + 1;
-        changebgcolor(count);
-    }, false);
+var count=1;
+var a=[...document.querySelectorAll('#banner a')];
+var carouselID=window.setInterval("carousel()", 2000);
+for (let i=0;i<a.length;i++) {
+    a[i].addEventListener('click',function(){
+        count=i+1;
+        changeImageAndBg(count);
+    },false);
 }
 
-const turnLeftDiv = document.getElementById('turnleft');
-const turnRightDiv = document.getElementById('turnright');
-turnLeftDiv.addEventListener('click', function () {
-    count = count - 1;
-    if (count < 1) {
-        count = 3;
+const turnLeftDiv=document.getElementById('turnleft');
+const turnRightDiv=document.getElementById('turnright');
+turnLeftDiv.addEventListener('click',function(){
+    count=count-1;
+    if(count<1){
+        count=3;
     }
     changeImageAndBg(count);
-}, false);
-turnRightDiv.addEventListener('click', function () {
-    count = count + 1;
-    if (count > 3) {
-        count = 1;
+},false);
+turnRightDiv.addEventListener('click',function(){
+    count=count+1;
+    if(count>3){
+        count=1;
     }
     changeImageAndBg(count);
-}, false);
+},false);
 
 
-function carousel() {
-    let imgSrc = `others/images/henfu${count}.jpg`;
-    let aChange = `point${count}`;
-    let aCount = count - 1;
-    if (aCount == 0) { aCount = 3; }
+function carousel(){
+    let imgSrc=`others/images/henfu${count}.jpg`;
+    let aChange=`point${count}`;
+    let aCount=count - 1;
+    if(aCount==0){aCount=3; }
     let aRestore = `point${aCount}`;
-    document.getElementById("henfu").src = imgSrc;
-    document.getElementById(aChange).style.backgroundColor = "hsl(0, 0.00%, 14%)";
-    document.getElementById(aRestore).style.backgroundColor = "hsl(0, 0%, 50%)";
-    count = count + 1;
-    if (count == 4) { count = 1; }
+    document.getElementById("henfu").src=imgSrc;
+    document.getElementById(aChange).style.backgroundColor="hsl(0, 0.00%, 14%)";
+    document.getElementById(aRestore).style.backgroundColor="hsl(0, 0%, 50%)";
+    count=count+1;
+    if(count==4){count=1; }
 }
-function changebgcolor(num) {
-    document.getElementById("henfu").src = `others/images/henfu${num}.jpg`;
-    for (let targetNum = 1; targetNum <= 3; targetNum++) {
-        let aTarget = `point${targetNum}`;
-        if (targetNum == num) {
-            document.getElementById(aTarget).style.backgroundColor = "hsl(0, 0.00%, 14%)";
+
+function changeImageAndBg(newCount){
+    document.getElementById("henfu").src=`others/images/henfu${newCount}.jpg`;
+    for (let targetNum=1;targetNum<=3;targetNum++) {
+        let aTarget=`point${targetNum}`;
+        if (targetNum==newCount) {
+            document.getElementById(aTarget).style.backgroundColor="hsl(0, 0.00%, 14%)";
         }
         else {
-            document.getElementById(aTarget).style.backgroundColor = "hsl(0, 0%, 50%)";
-        }
-    }
-}
-function changeImageAndBg(newCount) {
-    let imgSrc = `others/images/henfu${newCount}.jpg`;
-    document.getElementById("henfu").src = imgSrc;
-    for (let targetNum = 1; targetNum <= 3; targetNum++) {
-        let aTarget = `point${targetNum}`;
-        if (targetNum == newCount) {
-            document.getElementById(aTarget).style.backgroundColor = "hsl(0, 0.00%, 14%)";
-        }
-        else {
-            document.getElementById(aTarget).style.backgroundColor = "hsl(0, 0%, 50%)";
+            document.getElementById(aTarget).style.backgroundColor="hsl(0, 0%, 50%)";
         }
     }
 }
